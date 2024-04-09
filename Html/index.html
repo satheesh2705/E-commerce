@@ -1,43 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Css/style.css">
+
 </head>
 <body>
     <div>
         <nav class="nav">
-            <!-- <i class="uil uil-bars navOpenBtn"></i> -->
-            <a href="#" class="logo">CodingLab</a>
+           
             <div>
-                <input type="text" placeholder="search here" class="search-bar">
-                <i class="fa fa-search" style="font-size:24px;color:white;"></i>
-    
-                </div> 
+            <a href="#" class="logo">CodingLab</a>
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="What are You looking for ?" class="search-bar">
+                <i class="fa fa-search" ></i>
+            </div> 
             
             <ul class="nav-links">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Catogories</a></li>
-              <li><a href="#">Products</a></li>
+              <li><a href="#" onclick="openCatogories()">Catogories</a></li>
+              <li></li>
+              <li><a href="#">Seller</a></li>
+              <li><a href="">Flash Sales</a></li>
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li> <a href="#" class="LoginBtn">Login</a></li>
             </ul>
            
-            <div>
-            <i class="fa fa-heart" style="font-size:24px"></i>     
-            <i class="fa fa-user" style="font-size:24px"></i>
-            <i class="fa fa-shopping-bag" style="font-size:24px"></i>
+            <div class="nav-Icons">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+            <i class="fa fa-user"></i>
 
             </div>
-            <a href="#"><h4>Login</h4></a>
            
             
           </nav>
-    </div>
+          <!-- it this above div are used to display the second rov    -->
+          <div class="second-Row">
+            <div id="CatogoriesList" class="Catogories">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeCatogories()">&times;</a>
+                <a href="#" onclick="openMensList()">Mens</a>
+                <a href="#">Womens</a>
+                <a href="#">Kids</a>
+                <a href="#">Home Interiar</a>
+                <a href="#">Sports</a>
+                <a href="#">Toys</a>
+                <a href="#">Health & Beauty</a>
+                <a href="#">Grocerys & Pets</a>
+                <a href="#">Vechile Accesories</a>
+            </div>
+
+            <!-- this div content se the mens catogories -->
+            <div class="mensCatogory-List" id="openMensList"  >
+                <h1 >Mens</h1>
+                    <a href="javascript:void(0)" id="closeList" onclick="closeMensList()">&times;</a>
+                    <a href="#">Shirts</a>
+                    <a href="#">Pant</a>
+                    <a href="#">T-shirts</a>
+                    <a href="#">Shorts</a>
+                    <a href="#">Inners</a>
+            </div>
+           
+        </div>
+</div>
+
+
+<script src="../Js/index.js"></script>
+
     
 </body>
 </html>
