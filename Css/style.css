@@ -5,119 +5,267 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Poppins", sans-serif;
-     */
-     font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
   }
+
   body {
     background: #f0faff;
   }
-  .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 200px;
-    background: #4a98f7;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  .nav,
-  .nav .nav-links {
+
+ .nav{
+  height: 50px;
+  width: 100%;
+  background-color: #4a98f7;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+ }
+
+ .nav .nav-links{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  list-style-type: none;
+ }
+ .nav.nav-links li{
+  margin: 0 10px;
+ }
+ .logo,
+ .nav .nav-links li a,
+ .LoginBtn
+ {
+  margin: 0 10px;
+  text-decoration: none;
+  
+ }
+ 
+ .logo{
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+ }
+
+  .search-box{
+    height: 30px;
+    width: 300px;
     display: flex;
     align-items: center;
-  }
-  .nav {
-    justify-content:space-between;
-  }
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .nav .logo {
-    font-size: 25px;
-    font-weight: 500;
-  }
-  .nav .nav-links {
-    column-gap: 20px;
-    list-style: none;
-  }
-  .nav .nav-links a {
-    transition: all 0.2s linear;
-  }
-  
-
-  .search-bar{
-    height: 34px;
-    width: 220px;
-    padding-left: 10px;
+    justify-content: center;
     border-radius: 10px;
     border: none;
     outline: none;
     box-shadow: 5px -4px 12px 0px rgb(201, 200, 195);
+    background-color: white;
+
+  }
+
+  .search-box i{
+    font-size:22px;
+    color: #4a98f7;
+  }
+
+  .search-bar{
+   font-size: 18px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
 }
+
+
+.nav-Icons i{
+  font-size: 22px;
+  color: #f0faff;
+  margin: 0px 15px;
+  cursor: pointer;
+}  
+
+
+.nav-links li a{
+  font-size: 20px;
+}
+
+.nav-links li:hover{
+  background-color: #f0faff;
+  color: black;
+  border-radius: 2px;
   
-  /* responsive */
-  @media screen and (max-width: 1160px) {
-    .nav {
-      padding: 15px 100px;
-    }
-    .nav .search-box {
-      right: 150px;
-    }
-  }
-  @media screen and (max-width: 950px) {
-    .nav {
-      padding: 15px 50px;
-    }
-    .nav .search-box {
-      right: 100px;
-      max-width: 400px;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .nav .navOpenBtn,
-    .nav .navCloseBtn {
-      display: block;
-    }
-    .nav {
-      padding: 15px 20px;
-    }
-    .nav .nav-links {
-      position: fixed;
-      top: 0;
-      left: -100%;
-      height: 100%;
-      max-width: 280px;
-      width: 100%;
-      padding-top: 100px;
-      row-gap: 30px;
-      flex-direction: column;
-      background-color: #11101d;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      transition: all 0.4s ease;
-      z-index: 100;
-    }
-    .nav.openNav .nav-links {
-      left: 0;
-    }
-    .nav .navOpenBtn {
-      color: #fff;
-      font-size: 20px;
-      cursor: pointer;
-    }
-    .nav .navCloseBtn {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      color: #fff;
-      font-size: 20px;
-      cursor: pointer;
-    }
-    .nav .search-box {
-      top: calc(100% + 10px);
-      max-width: calc(100% - 20px);
-      right: 50%;
-      transform: translateX(50%);
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-  }
+}
+
+
+/* catogories list  */
+
+.second-Row{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.Catogories {
+  margin-top: 50px;
+  height: 100%;
+  width:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* background-color:rgba(61, 177, 197, 0); */
+  /* background-color: #4a98f7; */
+  overflow-x: hidden;
+  transition: 1.0s;
+  padding-top: 60px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.Catogories a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.Catogories a:hover {
+  color: #f1f1f1;
+}
+
+.Catogories .closebtn {
+  position: absolute;
+  top: 0%;
+  right: 25px; 
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.second-Row #mensList{
+  /* position: absolute;
+  top: 12%;
+  right:25px; */
+  height: 100%;
+  width:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color:#4a98f7;
+  overflow-x: hidden;
+  transition: 1.0s;
+  padding-top: 60px;
+
+}
+
+.second-Row #mensList a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.second-Row #womensList{
+  position: absolute;
+  top: 19%;
+  right: 25px;
+}
+
+@media screen and (max-height: 450px) {
+  .Catogories {padding-top: 15px;}
+  .Catogories a {font-size: 20px;}
+}
+
+
+/* mens Catogories */
+
+
+.mensCatogory-List{
+  height: 100%;
+  width:0;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color:#4a98f7;
+  overflow-x: hidden;
+  transition: .3s;
+  padding-top: 60px;
+  border-radius: 20px;
+}
+
+.mensCatogory-List a{
+  width: 250px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s; 
+}
+
+.mensCatogory-List h1{
+  margin-left: 30px;
+}
+
+#closeList{
+  position: absolute;
+  top: 8%;
+ font-size: 45px;
+ font-weight: 900;
+ margin-left: 150px;
+}
+
+/* this is for womens catogory list */
+
+
+.womensCatogory-List{
+  height: 100%;
+  width:0;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color:#4a98f7;
+  overflow-x: hidden;
+  transition: .3s;
+  padding-top: 60px;
+  border-radius: 20px;
+}
+
+.womensCatogory-List a{
+  width: 250px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s; 
+}
+
+.womensCatogory-List h1{
+  margin-left: 30px;
+}
+
+#closeList{
+  position: absolute;
+  top: 9%;
+ font-size: 45px;
+ font-weight: 900;
+ margin-left: 150px;
+}
+
+#closeList:hover,
+.Catogories .closebtn:hover
+{
+  color: rgb(255, 0, 0);
+  
+}
+
+.womensCatogory-List a:hover,
+.mensCatogory-List a:hover
+{
+  color: white;
+}
