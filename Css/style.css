@@ -102,16 +102,20 @@
 }
 
 .Catogories {
+  margin-top: 50px;
   height: 100%;
   width:0;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
-  background-color:#4a98f7;
+  /* background-color:rgba(61, 177, 197, 0); */
+  /* background-color: #4a98f7; */
   overflow-x: hidden;
   transition: 1.0s;
   padding-top: 60px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .Catogories a {
@@ -179,6 +183,7 @@
 .mensCatogory-List{
   height: 100%;
   width:0;
+  height: 500px;
   position: absolute;
   top: 0;
   left: 0;
@@ -187,10 +192,11 @@
   overflow-x: hidden;
   transition: .3s;
   padding-top: 60px;
+  border-radius: 20px;
 }
 
 .mensCatogory-List a{
-  width: 0%;
+  width: 250px;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -209,4 +215,57 @@
  font-size: 45px;
  font-weight: 900;
  margin-left: 150px;
+}
+
+/* this is for womens catogory list */
+
+
+.womensCatogory-List{
+  height: 100%;
+  width:0;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color:#4a98f7;
+  overflow-x: hidden;
+  transition: .3s;
+  padding-top: 60px;
+  border-radius: 20px;
+}
+
+.womensCatogory-List a{
+  width: 250px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s; 
+}
+
+.womensCatogory-List h1{
+  margin-left: 30px;
+}
+
+#closeList{
+  position: absolute;
+  top: 9%;
+ font-size: 45px;
+ font-weight: 900;
+ margin-left: 150px;
+}
+
+#closeList:hover,
+.Catogories .closebtn:hover
+{
+  color: rgb(255, 0, 0);
+  
+}
+
+.womensCatogory-List a:hover,
+.mensCatogory-List a:hover
+{
+  color: white;
 }
