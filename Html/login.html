@@ -1,33 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../Css/login.css">
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" href="../Css/signup.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<link rel="stylesheet" href="/Css/product.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="container">
-        <form action="otp.html">
-            <h3 class="title">Register Id</h3>
-            <div class="input-div one">
-            <input type="text" name="First name" placeholder="Name">
-            </div>
-            <div>
-            <input type="email" name="email" placeholder="email">
-            </div>
-            <div>
-            <input type="number" name="phonenumber" placeholder="phonenumber">
-            </div>
-            <div>
-            <input type="password" name="password" placeholder="password">
-            </div>
-            <div>
-            <input type="password" name="password" placeholder="confirm password">
-            <div>
-            <input type="submit"  class="btn" value="Register">
-            </div>
-        </form>
+	
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+
+		<div class="img">
+			<img src="img/bg.svg">
+		</div>
+
+		<div class="login-content">
+
+			<form action="index.html">
+				<img src="img/avatar.svg">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div"> 
+           		   		<input type="text" class="input" placeholder="Username">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	
+           		    	<input type="password" class="password" placeholder="password" >
+            	   </div>
+            	</div>
+            	<a href="forgetpswd.html">Forgot Password?</a>
+				<button class="btn" >Login</button>
+				<div class="newUser">
+				<p>Don't have an account? </p>
+				<a href="register.html">Sign Up</a>
+
+				</div>
+            </form>
+			
+				
+            </form>
+        </div>
     </div>
 </body>
 </html>

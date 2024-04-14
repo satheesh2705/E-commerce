@@ -1,0 +1,155 @@
+
+/* ================================== */
+/* =======      flash offer page */
+/* ================================== */
+
+.mainflash{
+    color:#000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px;
+    font-size: 25px;
+  background-image: linear-gradient(to right top, #370522, #004d7a, #008793, #00bf72, #a8eb12);
+
+  }
+  
+  .counterflash{
+  display: flex;
+  
+  }
+  
+  .boxflash small{
+    font-size: 20px;
+    padding-left:5px;
+    color:rgb(15, 37, 160);
+  }
+  
+  
+  .mainflash h1{
+    font-size: 50px;
+  }
+  
+  .boxflash h2{
+    font-size: 60px;
+    padding: 0 10px; 
+  }
+  
+
+
+/* flash offer in index page */
+
+.flashOffer{
+    display: flex;
+    overflow-y: hidden;
+    padding: 10px 0px 10px 50px;
+  }
+  
+  .flashOfferList{
+    height: 330px;
+    width: 230px;
+    padding: 10px;
+    border: 2px rgb(77, 161, 157) solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 0px 15px;
+   
+  }
+  
+  .flashOfferimg{
+    background-image: url("../Images/furnitures/home_Interior/7.png");
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-color: rgb(203, 211, 211);
+    border-radius: 5px;
+  }
+  
+  
+  .innerImg{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flashOfferList .discount{
+    margin: 5px 0 0 2px;
+    text-align: center;
+    color: white;
+    background-color: rgb(255, 4, 4);
+    border-radius: 4px;
+    height: 20px;
+    width: 40px;
+    padding: 2px 5px;
+    margin: 4px 0 0 5px;
+  }
+  
+   .product-Icon{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px 0 0;
+  }
+  
+  .product-Icon i{
+    font-size: 20px;
+    padding:5px 0px;
+  } 
+  
+  .product-Detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 0 10px;
+  }
+  
+  .product-Detail .Product-Name{
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    padding: 4px 0px;
+  
+  }
+  
+  .product-Detail p del{
+    font-size: 15px;
+    color: red;
+    font-style: italic;
+  }
+  
+  .product-Detail p{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 4px;
+  
+  }
+  
+  .product-Detail span i{
+    color: goldenrod;
+  }
+  
+  /* view page */
+  
+  .viewPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .viewPage button{
+    height: 45px;
+    width: 200px;
+    font-size: 25px;
+    border: 1px black solid;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: rgb(196, 38, 38);
+  
+  }
+
+.flashOfferPage{
+  padding: 0%;
+  margin: 0%;
+}

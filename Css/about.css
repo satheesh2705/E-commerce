@@ -70,6 +70,8 @@
 .cusSpecification:hover{
     background-color: red;
     color: aliceblue;
+    border-radius: 50%;
+    transition: 0.5s;
 }
 .siteDetail{
     /* display: grid;
@@ -121,3 +123,32 @@
 }
 
    
+
+/* contact csss */
+
+.Contact{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+}
+
+.Column h2,
+.Column p,
+.Column h3
+{
+    color: white;
+}
+
+.Csymbol{
+    color: aliceblue;
+}
+
+
+.Capp{
+    height: 50px;
+    width: 130px;
+    border-radius: 10px;
+    padding: 5px 0 0 10px;
+    border: 2px white solid;
+}

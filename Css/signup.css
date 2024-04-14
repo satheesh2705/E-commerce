@@ -182,6 +182,16 @@ a:hover{
 }
 
 
+.newUser{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+}
+.newUser a{
+	margin-left: 5px;
+}
+
+
 @media screen and (max-width: 1050px){
 	.container{
 		grid-gap: 5rem;
