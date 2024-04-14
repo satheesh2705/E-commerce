@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="/Css/product.css">
 
 </head>
 <body>
-    <div>
+
         <nav class="nav">
            
             <div>
@@ -26,33 +28,61 @@
             <ul class="nav-links">
               <li><a href="#">Home</a></li>
               <li><a href="#" onclick="openCatogories()">Catogories</a></li>
-              <li></li>
               <li><a href="#">Seller</a></li>
-              <li><a href="">Flash Sales</a></li>
               <li><a href="#">About Us</a></li>
               <li> <a href="#" class="LoginBtn">Login</a></li>
             </ul>
            
             <div class="nav-Icons">
             <i class="fa fa-heart-o" aria-hidden="true"></i>
-            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-            <i class="fa fa-user"></i>
-
+            <a href="../Html/mycart.html"> <i class="fa fa-cart-arrow-down" aria-hidden="true" ></i></a>
+            <i class="fa fa-user" onclick="showProfileList()"></i>
             </div>
            
             
           </nav>
+          
+          <!-- for image slider -->
+
+          <div class="mainslider">
+            <div class="slide-container">
+            <div class="slides">
+            <img src="../Images/furnitures/cooking/mix1.png" class="active">
+            <img src="../Images/furnitures/cooking/mix2.png">
+            <img src="../Images/furnitures/cooking/mix3.png">
+            <img src="../Images/furnitures/cooking/mix4.png">
+            <img src="/Images/furnitures/cooking/mix5.png">
+            </div>
+            
+            <div class="buttons">
+            <span class="next">&#10095;</span>
+            <span class="prev">&#10094;</span>
+            </div>
+            
+            <div class="dotsContainer">
+            <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+            <div class="dot" attr='1' onclick="switchImage(this)"></div>
+            <div class="dot" attr='2' onclick="switchImage(this)"></div>
+            <div class="dot" attr='3' onclick="switchImage(this)"></div>
+            <div class="dot" attr='4' onclick="switchImage(this)"></div>
+            </div>
+            
+            </div>
+            </div>
+            
+          </div>
           <!-- it this above div are used to display the second rov    -->
-          <div class="second-Row">
+        <div class="second-Row">
+
             <div id="CatogoriesList" class="Catogories">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeCatogories()">&times;</a>
                 <a href="#" onclick="openMensList()">Mens</a>
                 <a href="#" onclick="openWomensList()">Womens</a>
                 <a href="#">Kids</a>
-                <a href="#">Home Interiar</a>
+                <a href="#">Furniture's</a>
                 <a href="#">Sports</a>
                 <a href="#">Toys</a>
-                <a href="#">Health & Beauty</a>
+                <a href="#">Tech Product</a>
                 <a href="#">Grocerys & Pets</a>
                 <a href="#">Vechile Accesories</a>
             </div>
@@ -79,8 +109,171 @@
                     <a href="#">Make up items</a>
             </div>
            
+                <div class="profile-list" id="ProfileList">      
+                   <p> <a href="#"onclick="closeProfileList()">&times;</a></p>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        <p>Manage my account</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <p>My Order</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-xmark"></i> 
+                        <p> My cancelation</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-comment-dots"></i>
+                        <p> My review</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-repeat"></i>
+                        <p> Switch A/C</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <p> Settings</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <p> Log Out</p>
+                    </a>
+                 </div>
+            
         </div>
-</div>
+       
+        <div class="main">        
+          <div class="counter">
+            <div>
+                <h1>Flash Sale's</h1>
+            </div>
+            <div style="display: flex;">
+                <div class="box">
+                    <small>Days</small>
+                    <h2 id="days">00</h2>
+                  </div>
+                <div class="box">
+                    <small>Hours</small>
+                    <h2 id="hours">00</h2>
+                  </div>
+            
+                  <div class="box">
+                    <small>Minutes</small>
+                    <h2 id="minutes">00</h2>
+                  </div>
+            
+                  <div class="box">
+                    <small>Seconds</small>
+                    <h2 id="seconds">00</h2>
+                  </div>
+                  
+                  <!-- <div class="box">
+                    <small>MillSeconds</small>
+                    <h2 id="mseconds">00</h2>
+                  </div> -->
+            </div>                       
+          </div>
+
+          <div class="next">
+            <i class="fa-solid fa-left-long fa-2xs"></i>
+            <i class="fa-solid fa-left-long fa-rotate-180 fa-2xs"></i>
+        </div>
+    </div>
+
+    <div class="flashOffer">
+        <div class="flashOfferList">
+            <div class="flashOfferimg">
+                <div class="innerImg">
+                    <p class="discount">-40%</p>
+                    <div class="product-Icon">
+                        <i class="fa fa-heart-o" id="favoriteIcon"  onclick="handleFavorite()"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="product-Detail">
+            <p class="Product-Name">s-series comfort chair</p>
+            <p><del>1999</del>1499</p>
+            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></span>
+            </div>
+        </div>
+
+        <div class="flashOfferList">
+            <div class="flashOfferimg" style="background-image: url(../Images/furnitures/home_Interior/sofa4.png);">
+                <div class="innerImg">
+                    <p class="discount">-40%</p>
+                    <div class="product-Icon">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="product-Detail">
+            <p class="Product-Name">s-series comfort chair</p>
+            <p><del>1999</del>1499</p>
+            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></span>
+            </div>
+        </div>
+
+        <div class="flashOfferList">
+            <div class="flashOfferimg" style="background-image: url(../Images/furnitures/whashingmachine/wm3.png);" >
+                <div class="innerImg">
+                    <p class="discount">-40%</p>
+                    <div class="product-Icon">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="product-Detail">
+            <p class="Product-Name">s-series comfort chair</p>
+            <p><del>1999</del>1499</p>
+            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></span>
+            </div>
+        </div>
+
+        <div class="flashOfferList">
+            <div class="flashOfferimg" style="background-image: url(../Images/furnitures/cooking/stove.png);">
+                <div class="innerImg">
+                    <p class="discount">-40%</p>
+                    <div class="product-Icon">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="product-Detail">
+            <p class="Product-Name">s-series comfort chair</p>
+            <p><del>1999</del>1499</p>
+            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></span>
+            </div>
+        </div>
+
+        <div class="flashOfferList">
+            <div class="flashOfferimg" style="background-image: url(../Images/furnitures/cooking/mix3.png);">
+                <div class="innerImg">
+                    <p class="discount">-40%</p>
+                    <div class="product-Icon">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="product-Detail">
+            <p class="Product-Name">s-series comfort chair</p>
+            <p><del>1999</del>1499</p>
+            <span><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="viewPage">
+        <a href="../Html/flash_sale.html">
+            <button>View All</button>
+        </a>
+    </div>
+
 
 
 <script src="../Js/index.js"></script>
