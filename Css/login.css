@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+.div{
+    
+}
+=======
 body{
     display: flex;
     flex-direction: column;
@@ -24,3 +29,4 @@ body{
     border-radius: 20px;
 }
 
+>>>>>>> cf39af5d2423edfc6b4f318bfb86282818df3348
