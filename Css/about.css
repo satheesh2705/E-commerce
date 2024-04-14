@@ -1,0 +1,123 @@
+.about-Nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding-left: 100px;
+}
+.about-Nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+}
+
+.about-Nav ul li,
+.about-Nav ul li a
+{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.about-Nav ul li a:hover{
+    color:red;
+    font-weight: 700;
+    
+}
+
+.story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.storyLeft{
+    width: 40vw; 
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.story-right{
+    background-image: url("../Images/uiImage/customer.png");
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+}
+.aboutCusstomer{
+    display: flex;
+    justify-content: center;
+}
+
+.cusSpecification{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    border: 1px black solid;
+    margin: 5px;
+    padding: 10px;
+    }
+
+.cusSpecification i{
+    border: 2px black solid;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.cusSpecification:hover{
+    background-color: red;
+    color: aliceblue;
+}
+.siteDetail{
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.siteDetail h4,
+.siteDetail p{
+    /* padding: 0%; */
+    margin: 5px 0;
+}
+
+.cusSpecification i:hover{
+    color: white;
+    background-color: black;
+}
+
+.Image-List{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width: 100vw;
+    height: 300px;
+}    
+.Image-Box{
+    padding: 10px;
+}
+.ownerImage{
+    height: 200px;
+    width: 220px;
+    background-image: url("/Images/uiImage/pngwing.com\ \(35\).png");   
+    background-size: cover;
+}
+
+.ownerDetail{
+    display: grid;
+    place-items: center;
+    margin: 15px 0 0 10px;
+}
+
+.ownerDetail h2,
+.ownerDetail p{
+    margin: 1px;
+    padding: 1px;
+}
+
+   

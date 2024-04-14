@@ -1,19 +1,14 @@
-body{
+.contact_page{
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-between;
     background-color: black;
-    color: white;
-    letter-spacing:0.05em;
-    word-spacing: 0.3em;
-    font-family: Arial, Helvetica, sans-serif;
+    color: white; 
+    padding: 50px;
 }
 .icon{
     display: flex ;
     border: 2px solid wheat;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+   padding: 10px;
     border-radius: 5px;
 }
 .icon input{
@@ -34,7 +29,9 @@ img{
 .bottom{
     display: flex;
 }
-
+.symbol i:hover{
+    color: red;
+}
 .app{
     height: 50px;
     width: 130px;
@@ -42,4 +39,12 @@ img{
     border: 2px solid white;
     margin-left: 10px;
     margin-top: 5px;
+}
+
+
+.column a{
+    text-decoration: none;
+    color: azure;
+
+
 }
