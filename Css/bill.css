@@ -1,0 +1,15 @@
+.bbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bbottom{
+    display: flex;
+    
+}
+.bimages{
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+.bbottom label{
+    padding-top: 15px;
+}
