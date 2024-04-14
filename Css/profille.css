@@ -1,0 +1,25 @@
+#f1{
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+
+.Pcontainer{
+    display: flex;
+    padding: 30px;
+    
+    
+}
+.Pright{
+    padding: 80px;
+    display: flex;
+    flex-direction:column;
+
+}
+.Ptop{
+    display: flex;
+}
+
+.Pbottom{
+    padding-left:px;
+}
